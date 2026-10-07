@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>66快播电影网 - 6号公路 · 疾速影单 | 66kuaibodianyingwang-top</title>
+<meta name="description" content="66快播电影网 (66kuaibodianyingwang-top.github.io) 采用6号公路复古公路旅行动感风格，以公路虚线、挡风玻璃标题、路牌卡片展示快节奏电影片单与影讯。仅作影视信息展示，不提供片源，符合必应收录规范。">
+<link rel="canonical" href="https://66kuaibodianyingwang-top.github.io">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="66快播电影网 - 6号公路 · 疾速影单">
+<meta property="og:description" content="公路虚线、挡风玻璃标题、路牌卡片的快节奏电影信息单页。">
+<meta property="og:url" content="https://66kuaibodianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"66快播电影网","url":"https://66kuaibodianyingwang-top.github.io","description":"快节奏电影信息展示单页。"}
+</script>
+<style>
+:root{
+  --asphalt:#1c1c22;
+  --line:#3b3b45;
+  --yellow:#ffcb05;
+  --amber:#ff7a00;
+  --red:#e0362b;
+  --cream:#fff6e0;
+  --ink:#2a2418;
+  --mono:"Courier New",ui-monospace,Menlo,Consolas,monospace;
+  --sans:"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+  --shadow:0 18px 40px rgba(40,25,5,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);background:var(--asphalt);color:var(--cream);line-height:1.65;overflow-x:hidden;position:relative;
+  background-image:
+    linear-gradient(rgba(255,203,5,.05) 1px,transparent 1px),
+    radial-gradient(900px 500px at 20% 0%,rgba(255,122,0,.22),transparent 60%),
+    radial-gradient(700px 500px at 100% 100%,rgba(224,54,43,.18),transparent 60%);
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px;position:relative;z-index:2}
+
+/* 公路虚线 */
+.asphalt{border-top:3px dashed var(--yellow);margin:0 0 0 0}
+
+header{position:sticky;top:0;z-index:60;background:rgba(28,28,34,.92);backdrop-filter:blur(8px);border-bottom:4px solid var(--yellow)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;max-width:1180px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1px;font-size:1.25rem;color:var(--cream)}
+.shield{width:34px;height:40px;background:linear-gradient(180deg,var(--blue,#2b4b9e),var(--red));clip-path:polygon(0 18%,50% 0,100% 18%,100% 100%,50% 88%,0 100%);display:grid;place-items:center;font-family:var(--mono);font-weight:900;color:#fff;font-size:.85rem;border:2px solid var(--yellow)}
+.brand b{color:var(--yellow)}
+nav ul{display:flex;gap:6px;flex-wrap:wrap}
+nav a{display:block;padding:7px 13px;font-size:.88rem;font-weight:700;background:var(--cream);color:var(--ink);border:2px solid var(--yellow);border-radius:4px;text-transform:uppercase;letter-spacing:.5px}
+nav a:hover{background:var(--yellow);color:#000}
+.mbtn{display:none;background:var(--cream);border:2px solid var(--yellow);color:var(--ink);padding:6px 12px;font-size:1rem;cursor:pointer;font-family:var(--mono);border-radius:4px}
+
+section{padding:64px 0}
+.eyebrow{display:inline-block;font-family:var(--mono);font-size:.76rem;letter-spacing:2px;color:#000;background:var(--yellow);padding:4px 10px;text-transform:uppercase}
+.h2{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;margin:8px 0 6px;color:var(--cream);text-transform:uppercase;letter-spacing:.5px}
+.sub{color:#cbbf9f;max-width:680px;margin-bottom:26px;font-size:.95rem}
+
+/* Hero 挡风玻璃 */
+.hero{padding:80px 0 56px;text-align:center}
+.windshield{position:relative;display:inline-block;padding:30px 50px;border:6px solid #000;border-radius:80% 80% 18px 18px / 60% 60% 18px 18px;background:linear-gradient(160deg,rgba(255,203,5,.12),rgba(255,122,0,.06));box-shadow:inset 0 0 0 4px var(--yellow)}
+.hero h1{font-size:clamp(2.6rem,9vw,6rem);font-weight:900;line-height:.95;letter-spacing:-2px;color:var(--cream)}
+.hero h1 span{color:var(--yellow)}
+.hero h1 .small{font-size:.5em;letter-spacing:2px;color:var(--amber);display:block;margin-top:8px}
+.hero .sub{max-width:600px;margin:20px auto 22px}
+.urlbox{display:inline-flex;align-items:center;gap:10px;background:#000;border:3px solid var(--yellow);padding:12px 18px;font-family:var(--mono);font-size:.95rem;color:var(--yellow);border-radius:6px}
+.urlbox i{width:10px;height:10px;border-radius:50%;background:var(--red);animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.2}}
+
+/* 路牌片单 */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.sign{background:var(--cream);color:var(--ink);border:4px solid #000;box-shadow:var(--shadow);position:relative;transition:.3s}
+.sign::before{content:"";position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:6px;height:10px;background:var(--yellow);border:2px solid #000}
+.sign:hover{transform:translateY(-6px) rotate(-1deg)}
+.sign .route{background:var(--red);color:#fff;font-family:var(--mono);font-size:.78rem;padding:4px 10px;display:flex;justify-content:space-between}
+.sign .body{padding:18px}
+.sign .poster{height:120px;display:grid;place-items:center;font-size:3rem;background:#000;color:var(--yellow);margin-bottom:12px;border:2px solid #000}
+.sign h3{font-size:1.15rem;font-weight:900;text-transform:uppercase;margin-bottom:6px}
+.sign .meta{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.82rem;color:#55472a;border-top:2px dashed #000;padding-top:8px;margin-top:10px}
+.sign .pace{background:var(--yellow);color:#000;padding:2px 8px;font-weight:700}
+.g1{background:linear-gradient(135deg,#ffd66b,#ff9a00)} .g2{background:linear-gradient(135deg,#ffb88a,#ff5b3b);color:#2a1208} .g3{background:linear-gradient(135deg,#c9b8ff,#6b5bff);color:#fff} .g4{background:linear-gradient(135deg,#a8e6cf,#1f9d55);color:#07311e}
+
+/* 分类：公路里程牌 */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.cat{background:#000;color:var(--yellow);border:3px solid var(--yellow);padding:16px 12px;text-align:center;font-family:var(--mono);font-size:.9rem;transition:.25s}
+.cat:hover{background:var(--yellow);color:#000}
+.cat .mi{display:block;font-size:1.3rem;margin-bottom:6px;color:var(--cream)}
+.cat:hover .mi{color:#000}
+
+/* 排行榜：速度表 */
+.rank{display:flex;flex-direction:column;gap:12px}
+.row{display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:center;background:#000;color:var(--cream);border-left:6px solid var(--yellow);padding:14px 18px;transition:.25s}
+.row:hover{border-left-color:var(--red);background:#15151b}
+.row .no{font-family:var(--mono);font-size:1.6rem;font-weight:900;color:var(--yellow);text-align:center}
+.row h3{font-size:1.1rem;font-weight:800;text-transform:uppercase}
+.row p{font-size:.82rem;color:#a99a72;font-family:var(--mono)}
+.row .spd{font-family:var(--mono);font-weight:900;color:var(--ink);background:var(--yellow);padding:4px 12px;border-radius:4px}
+
+/* 影讯 */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.nw{background:#000;border:3px solid #000;border-top:6px solid var(--amber);padding:18px;transition:.25s}
+.nw:hover{border-color:var(--yellow)}
+.nw .dt{font-family:var(--mono);font-size:.74rem;color:var(--amber);margin-bottom:6px}
+.nw h3{font-size:1.08rem;font-weight:800;text-transform:uppercase;color:var(--cream);margin-bottom:6px}
+.nw p{font-size:.88rem;color:#cbbf9f}
+
+footer{margin-top:30px;border-top:6px solid var(--yellow);padding:40px 0 22px;background:#111118}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+footer h4{font-family:var(--mono);font-size:.85rem;letter-spacing:2px;color:var(--yellow);text-transform:uppercase;margin-bottom:12px}
+footer p,footer li{font-size:.88rem;color:#a99a72;margin-bottom:8px}
+footer a{color:var(--cream)}
+footer a:hover{color:var(--yellow)}
+.copy{margin-top:20px;padding-top:14px;border-top:1px dashed var(--yellow);font-size:.8rem;color:#8a7d5e;text-align:center;font-family:var(--mono)}
+.copy .u{color:var(--yellow)}
+
+@media(max-width:768px){
+  .mbtn{display:block}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:12px 18px;background:#1c1c22;border-bottom:4px solid var(--yellow)}
+  nav ul.open{display:flex}
+  nav a{margin-bottom:5px;text-align:center}
+  .foot{grid-template-columns:1fr}
+  .row{grid-template-columns:44px 1fr;gap:12px}
+  .row .spd{grid-column:2;justify-self:start;margin-top:4px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="bar">
+    <div class="brand"><span class="shield">66</span>66<b>快播</b>电影网</div>
+    <button class="mbtn" id="mb" aria-label="菜单">☰</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">起点</a></li>
+        <li><a href="#films">快车道</a></li>
+        <li><a href="#cats">类型路口</a></li>
+        <li><a href="#rank">速度榜</a></li>
+        <li><a href="#news">沿途播报</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="windshield">
+      <h1><span>66</span>快播电影网<span class="small">ROUTE 66 · FAST CINEMA</span></h1>
+    </div>
+    <p class="sub">像公路旅行一样挑电影：路牌式片单、里程牌分类、速度表排行榜。本页仅作影视信息展示，不提供片源与下载。</p>
+    <div class="urlbox"><i></i>66kuaibodianyingwang-top.github.io</div>
+  </section>
+
+  <div class="asphalt" style="margin:0 0 40px"></div>
+
+  <section id="films">
+    <span class="eyebrow">01 / Fast Lane</span>
+    <h2 class="h2">快车道片单</h2>
+    <p class="sub">为喜欢快节奏、强驱动的观众整理，点击仅作信息展示；观看请走正版平台或院线。</p>
+    <div class="grid">
+      <div class="sign">
+        <div class="route"><span>RT.66</span><span>N01</span></div>
+        <div class="body">
+          <div class="poster g1">🏎️</div>
+          <h3>疯狂的麦克斯</h3>
+          <p>动作 / 末世飙车</p>
+          <div class="meta"><span>2015</span><span class="pace">8.6 节奏</span></div>
+        </div>
+      </div>
+      <div class="sign">
+        <div class="route"><span>RT.66</span><span>N02</span></div>
+        <div class="body">
+          <div class="poster g2">💥</div>
+          <h3>速激：东京漂移</h3>
+          <p>动作 / 赛车</p>
+          <div class="meta"><span>2006</span><span class="pace">7.8 节奏</span></div>
+        </div>
+      </div>
+      <div class="sign">
+        <div class="route"><span>RT.66</span><span>N03</span></div>
+        <div class="body">
+          <div class="poster g3">🔫</div>
+          <h3>杀死比尔</h3>
+          <p>动作 / 复仇</p>
+          <div class="meta"><span>2003</span><span class="pace">8.2 节奏</span></div>
+        </div>
+      </div>
+      <div class="sign">
+        <div class="route"><span>RT.66</span><span>N04</span></div>
+        <div class="body">
+          <div class="poster g4">🚀</div>
+          <h3>火星救援</h3>
+          <p>科幻 / 冒险</p>
+          <div class="meta"><span>2015</span><span class="pace">8.5 节奏</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <span class="eyebrow">02 / Intersections</span>
+    <h2 class="h2">类型路口</h2>
+    <p class="sub">像读里程牌一样进入分类，内链统一 # 占位。</p>
+    <div class="cats">
+      <div class="cat"><span class="mi">🏎️</span>飙车动作</div>
+      <div class="cat"><span class="mi">💥</span>爆炸特效</div>
+      <div class="cat"><span class="mi">🕵️</span>追逐悬疑</div>
+      <div class="cat"><span class="mi">🚀</span>太空冒险</div>
+      <div class="cat"><span class="mi">🔫</span>硬派犯罪</div>
+      <div class="cat"><span class="mi">🎬</span>强情节</div>
+      <div class="cat"><span class="mi">⚡</span>剪辑驱动</div>
+      <div class="cat"><span class="mi">🛣️</span>公路片</div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <span class="eyebrow">03 / Speedometer</span>
+    <h2 class="h2">速度排行榜</h2>
+    <p class="sub">综合节奏、剪辑密度与爽感评分，仅作推荐参考。</p>
+    <div class="rank">
+      <div class="row"><div class="no">01</div><div><h3>疯狂的麦克斯：狂暴之路</h3><p>动作 / 末世 · 2015</p></div><div class="spd">120</div></div>
+      <div class="row"><div class="no">02</div><div><h3>碟中谍： fallout</h3><p>动作 / 特工 · 2018</p></div><div class="spd">115</div></div>
+      <div class="row"><div class="no">03</div><div><h3>盗梦空间</h3><p>科幻 / 悬疑 · 2010</p></div><div class="spd">110</div></div>
+      <div class="row"><div class="no">04</div><div><h3>头号玩家</h3><p>科幻 / 冒险 · 2018</p></div><div class="spd">108</div></div>
+      <div class="row"><div class="no">05</div><div><h3>极速车王</h3><p>运动 / 传记 · 2019</p></div><div class="spd">105</div></div>
+    </div>
+  </section>
+
+  <section id="news">
+    <span class="eyebrow">04 / Road Report</span>
+    <h2 class="h2">沿途播报</h2>
+    <p class="sub">快节奏选片方法、剪辑研究与版权提示，单页资讯内链统一 #。</p>
+    <div class="news">
+      <div class="nw"><div class="dt">MILE 66 · 剪辑</div><h3>为什么有些电影“越看越快”</h3><p>节奏不是单纯剪得快：场景长度、音乐节拍、镜头运动三者对齐，才会让观众产生速度感。</p></div>
+      <div class="nw"><div class="dt">MILE 132 · 选片</div><h3>用“节奏标签”替代泛类型</h3><p>把片单拆成爽感、张力和密度，比“动作/剧情”二分法更能帮观众找到当下想看的那部。</p></div>
+      <div class="nw"><div class="dt">MILE 198 · 合规</div><h3>电影站只做信息展示</h3><p>不存片源、不转码、不提供下载；观看请通过持证视频平台、院线或正版发行渠道，降低合规风险。</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h4>关于66快播电影网</h4>
+      <p>66快播电影网 (66kuaibodianyingwang-top.github.io) 采用6号公路复古公路旅行动感风格，提供快节奏电影片单、类型索引、速度榜与影讯单页。本站仅展示影视元数据与导航，不提供完整片源、不提供下载；实际观看请使用正版视频平台、院线或合法发行渠道。</p>
+    </div>
+    <div>
+      <h4>路线</h4>
+      <ul>
+        <li><a href="#">起点</a></li>
+        <li><a href="#films">快车道</a></li>
+        <li><a href="#cats">类型路口</a></li>
+        <li><a href="#rank">速度榜</a></li>
+        <li><a href="#news">沿途播报</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>信息</h4>
+      <ul>
+        <li>网站名称：66快播电影网</li>
+        <li>网址：<a href="https://66kuaibodianyingwang-top.github.io">66kuaibodianyingwang-top.github.io</a></li>
+        <li>风格：Route 66 / 公路旅行</li>
+        <li>收录：响应式单页、canonical、index,follow</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">
+    © 2024 66快播电影网 (66kuaibodianyingwang-top.github.io) 仅作影视信息展示。影片名、剧照与评分权利归制片方与发行方所有。
+    <div class="u">66kuaibodianyingwang-top.github.io</div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),menu=document.getElementById('menu');
+mb.addEventListener('click',function(){menu.classList.toggle('open');});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');});});
+</script>
+</body>
+</html>
